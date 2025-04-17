@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay"></div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">LOGO</div>
+        
+        <a href="index.html" class="menu-item">
+            <i class="fas fa-th-large"></i>
+            <span>Dashboard</span>
+        </a>
+        
+        <a href="Metal-M.html" class="menu-item">
+            <i class="fas fa-cube"></i>
+            <span>Metal Management</span>
+        </a>
+        
+        <a href="category.html" class="menu-item">
+            <i class="fas fa-tags"></i>
+            <span>Category Management</span>
+        </a>
+        
+        <a href="Product.html" class="menu-item">
+            <i class="fas fa-box"></i>
+            <span>Product Management</span>
+        </a>
+        
+        <div class="menu-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Sales Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-warehouse"></i>
+            <span>Stocks Management</span>
+        </div>
+        
+        <a href="customer.html" class="menu-item">
+            <i class="fas fa-users"></i>
+            <span>Customer Management</span>
+        </a>
+        
+        <div class="menu-item">
+            <i class="fas fa-user-tie"></i>
+            <span>Staff Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-file-invoice"></i>
+            <span>Invoice Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span>CRM</span>
+        </div>
+        
+        <button class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </button>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div style="display: flex; align-items: center;">
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <h1>Hello Admin</h1>
+            </div>
+            
+            <div class="user-info">
+                <i class="far fa-bell"></i>
+                <i class="far fa-envelope"></i>
+                
+                <div class="user-avatar">NK</div>
+                
+                <div class="user-details">
+                    <div class="user-name">Nagesh Kumar</div>
+                    <div class="user-role">Owner</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Metal Cards -->
+        <div class="metal-cards-container">
+            <div class="metal-cards">
+                <div class="metal-card metal-1">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 1</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-up">+0.003% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+                
+                <div class="metal-card metal-2">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 2</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-down">-0.001% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+                
+                <div class="metal-card metal-3">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 3</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-up">+0.001% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+                
+                <div class="metal-card metal-4">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 4</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-up">+0.001% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+
+                
+                <div class="metal-card metal-4">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 4</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-up">+0.001% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+
+                
+                <div class="metal-card metal-4">
+                    <div class="metal-header">
+                        <div class="metal-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span>Metal 4</span>
+                    </div>
+                    
+                    <div class="metal-price">₹45000.05<span style="font-size: 12px;">/gm</span></div>
+                    <div class="price-change price-up">+0.001% today</div>
+                    <div class="last-updated">Last updated: 10-02-2023, 11:29</div>
+                    
+                    <button class="update-btn">Update Price</button>
+                </div>
+            </div>
+            
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        
+        <!-- Dashboard Layout -->
+        <div class="dashboard-layout">
+            <!-- Left Column: Graph and Analytics -->
+            <div class="left-column">
+                <!-- Graph Section -->
+                <div class="graph-container">
+                    <div class="graph-header">
+                        <div class="graph-title">Sales Graph</div>
+                        
+                        <div class="graph-filters">
+                            <div class="graph-filter">Monthly</div>
+                            
+                            <div class="graph-filter active">
+                                <div class="graph-filter-dot sales-dot"></div>
+                                <span>Sales made</span>
+                            </div>
+                            
+                            <div class="graph-filter">
+                                <div class="graph-filter-dot products-dot"></div>
+                                <span>Products sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="graph-canvas">
+                        <div class="graph-y-axis">
+                            <div class="graph-y-label">6L</div>
+                            <div class="graph-y-label">5L</div>
+                            <div class="graph-y-label">4L</div>
+                            <div class="graph-y-label">3L</div>
+                            <div class="graph-y-label">2L</div>
+                            <div class="graph-y-label">1L</div>
+                        </div>
+                        
+                        <!-- SVG for the graph lines -->
+                        <svg class="graph-line" viewBox="0 0 600 200" preserveAspectRatio="none">
+                            <!-- Sales line (green) -->
+                            <path d="M0,150 C50,120 100,160 150,140 C200,120 250,80 300,60 C350,40 400,60 450,40 C500,20 550,40 600,30" 
+                                fill="none" stroke="#8baf4b" stroke-width="3" />
+                            
+                            <!-- Products line (red) -->
+                            <path d="M0,160 C50,140 100,170 150,150 C200,130 250,150 300,130 C350,110 400,130 450,150 C500,170 550,150 600,140" 
+                                fill="none" stroke="#ff6b6b" stroke-width="3" />
+                        </svg>
+                    </div>
+                    
+                    <div class="graph-x-axis">
+                        <div>Jan</div>
+                        <div>Feb</div>
+                        <div>Mar</div>
+                        <div>Apr</div>
+                        <div>May</div>
+                        <div>Jun</div>
+                        <div>Jul</div>
+                    </div>
+                </div>
+                
+                <!-- Analytics Section -->
+                <div class="analytics-section">
+                    <div class="analytics-header">
+                        <div class="analytics-title">Analytics</div>
+                        
+                        <div class="analytics-date">
+                            13-02-2023
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-cards">
+                        <div class="analytics-card sales">
+                            <div class="analytics-value">₹5489.90</div>
+                            <div class="analytics-change">+0.003% today</div>
+                            <div class="analytics-label">Sales made</div>
+                        </div>
+                        
+                        <div class="analytics-card products">
+                            <div class="analytics-value">32</div>
+                            <div class="analytics-change">+0.001% today</div>
+                            <div class="analytics-label">Products sold</div>
+                        </div>
+                        
+                        <div class="analytics-card customers">
+                            <div class="analytics-value">20</div>
+                            <div class="analytics-change">+0.001% today</div>
+                            <div class="analytics-label">Customers visited</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Customers -->
+            <div class="right-column">
+                <div class="customers-container">
+                    <div class="customers-title">Recent Customers</div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="customer-item">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                            </div>
+                            
+                            <div class="customer-details">
+                                <h4>Customer's Name</h4>
+                                <p>+91 12345 78906</p>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        // JavaScript for horizontal scrolling with arrow
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollArrow = document.querySelector('.scroll-arrow');
+            const metalCards = document.querySelector('.metal-cards');
+            
+            scrollArrow.addEventListener('click', function() {
+                metalCards.scrollBy({
+                    left: 250,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Mobile sidebar toggle
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarOverlay = document.querySelector('.sidebar-overlay');
+            
+            function toggleSidebar() {
+                sidebar.classList.toggle('active');
+                sidebarOverlay.classList.toggle('active');
+                document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
+            }
+            
+            hamburgerMenu.addEventListener('click', toggleSidebar);
+            sidebarOverlay.addEventListener('click', toggleSidebar);
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Metal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay"></div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">LOGO</div>
+        
+        <a href="index.html" class="menu-item">
+            <i class="fas fa-th-large"></i>
+            <span>Dashboard</span>
+        </a>
+        
+        <a href="Metal-M.html" class="menu-item">
+            <i class="fas fa-cube"></i>
+            <span>Metal Management</span>
+        </a>
+        
+        <a href="category.html" class="menu-item">
+            <i class="fas fa-tags"></i>
+            <span>Category Management</span>
+        </a>
+        
+        <a href="Product.html" class="menu-item">
+            <i class="fas fa-box"></i>
+            <span>Product Management</span>
+        </a>
+        
+        <div class="menu-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Sales Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-warehouse"></i>
+            <span>Stocks Management</span>
+        </div>
+        
+        <a href="customer.html" class="menu-item">
+            <i class="fas fa-users"></i>
+            <span>Customer Management</span>
+        </a>
+        
+        <div class="menu-item">
+            <i class="fas fa-user-tie"></i>
+            <span>Staff Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-file-invoice"></i>
+            <span>Invoice Management</span>
+        </div>
+        
+        <div class="menu-item">
+            <i class="fas fa-cog"></i>
+            <span>CRM</span>
+        </div>
+        
+        <button class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </button>
+    </div>
+    
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">Hello Admin</div>
+            <div class="user-profile">
+                <div class="notification-icon"><i class="far fa-bell"></i></div>
+                <div class="message-icon"><i class="far fa-envelope"></i></div>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar" class="user-avatar">
+                    <div>
+                        <div class="user-name">Neeresh Kumar</div>
+                        <div class="user-role">Owner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <div class="tab active">Metal</div>
+            <div class="tab">Stone</div>
+        </div>
+
+        <!-- View Toggle -->
+        <div class="view-toggle">
+            <div class="toggle-btn active">
+                <i class="fas fa-th"></i> Grid view
+            </div>
+            <div class="toggle-btn">
+                <i class="fas fa-list"></i> List view
+            </div>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid-container">
+            <!-- Item 1 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal1/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                        <div class="item-type">Gold</div>
+                        <div class="item-price">₹500.00/gm</div>
+                        </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal2/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                        <div class="item-type">Gold</div>
+                        <div class="item-price">₹500.00/gm</div>
+                        </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal3/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                        <div class="item-type">Gold</div>
+                        <div class="item-price">₹500.00/gm</div>
+                        </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal4/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                        <div class="item-type">Gold</div>
+                        <div class="item-price">₹500.00/gm</div>
+                        </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal5/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                        <div class="item-type">Gold</div>
+                        <div class="item-price">₹500.00/gm</div>
+                        </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="grid-item">
+                <img src="https://picsum.photos/seed/metal6/300/200" alt="Metal" class="item-image">
+                <div class="item-details">
+                    <div class="item-gold">
+                    <div class="item-type">Gold</div>
+                    <div class="item-price">₹500.00/gm</div>
+                    </div>
+                    <div class="item-actions">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <button class="edit-btn">Edit metal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add New Button -->
+        <button class="add-new-btn">
+            <i>➕</i> Add new metal
+        </button>
+    </div>
+</body>
+</html>

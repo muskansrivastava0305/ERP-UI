@@ -1,0 +1,282 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Sidebar Styles */
+/* .sidebar {
+    width: 220px;
+    background-color: #8abb46;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #7aa93e;
+}
+
+.logo {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-item i {
+    margin-right: 10px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #8AAE4A;
+    color: white;
+    padding: 20px 15px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    text-align:center
+ }
+
+ .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    color: white; /* Your desired color */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s;
+    border-radius: 5px;
+     margin-bottom: 5px;
+    
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+    color: #8AAE4A;
+}
+
+.menu-item.active {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.logout-btn {
+    margin: 20px;
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-btn i {
+    margin-right: 8px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon, .message-icon {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-role {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 8px 15px;
+    width: 300px;
+}
+
+.search-bar i {
+    color: #666;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+/* Filter Button */
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+/* Table Styles */
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.customer-table th {
+    background-color: #8abb46;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.customer-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.customer-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.customer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.credit-status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.credit-active {
+    color: #4caf50;
+}
+
+.credit-closed {
+    color: #f44336;
+}
+
+.action-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+/* Add New Button */
+.add-new-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8abb46;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-new-btn i {
+    margin-right: 5px;
+}

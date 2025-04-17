@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="customer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">LOGO</div>
+        <div class="sidebar-menu">
+            
+            <a href="index.html" class="menu-item">
+                <i class="fas fa-th-large"></i>
+                <span>Dashboard</span>
+            </a>
+            
+            <a href="Metal-M.html" class="menu-item">
+                <i class="fas fa-cube"></i>
+                <span>Metal Management</span>
+            </a>
+            
+            <a href="category.html" class="menu-item">
+                <i class="fas fa-tags"></i>
+                <span>Category Management</span>
+            </a>
+            
+            <a href="Product.html" class="menu-item">
+                <i class="fas fa-box"></i>
+                <span>Product Management</span>
+            </a>
+            
+            <a href="customer.html" class="menu-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Sales Management</span>
+            </a>
+            
+            <div class="menu-item">
+                <i class="fas fa-warehouse"></i>
+                <span>Stocks Management</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class="fas fa-users"></i>
+                <span>Customer Management</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Staff Management</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class="fas fa-file-invoice"></i>
+                <span>Invoice Management</span>
+            </div>
+            
+            <div class="menu-item">
+                <i class="fas fa-cog"></i>
+                <span>CRM</span>
+            </div>
+            </div>
+        <button class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">Hello Admin</div>
+            <div class="user-profile">
+                <div class="notification-icon"><i class="far fa-bell"></i></div>
+                <div class="message-icon"><i class="far fa-envelope"></i></div>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar" class="user-avatar">
+                    <div>
+                        <div class="user-name">Neeresh Kumar</div>
+                        <div class="user-role">Owner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="search-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <button class="filter-btn">
+                <i class="fas fa-filter"></i>
+            </button>
+        </div>
+
+        <!-- Customer Table -->
+        <table class="customer-table">
+            <thead>
+                <tr>
+                    <th>Customer's name</th>
+                    <th>Mobile number</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Credit</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ayan Mukerji</td>
+                    <td>+91 63547 85225</td>
+                    <td>Male</td>
+                    <td>Oakville St, Kolkata</td>
+                    <td><span class="credit-status credit-active">Active</span></td>
+                    <td><img src="https://picsum.photos/seed/customer1/100/100" alt="Customer" class="customer-image"></td>
+                    <td>
+                        <button class="action-btn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nandini Mehta</td>
+                    <td>+91 87962 32788</td>
+                    <td>Female</td>
+                    <td>Purulia, Sahebganj</td>
+                    <td><span class="credit-status credit-closed">Closed</span></td>
+                    <td><img src="https://picsum.photos/seed/customer2/100/100" alt="Customer" class="customer-image"></td>
+                    <td>
+                        <button class="action-btn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Add New Button -->
+        <button class="add-new-btn">
+            <i class="fas fa-plus"></i> Add new product
+        </button>
+    </div>
+</body>
+</html>
